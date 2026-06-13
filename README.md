@@ -1,6 +1,6 @@
 # apit — api-tracker CLI
 
-`apit` — CLI-клиент для AI-first таск-трекера [apitracker.ru](https://apitracker.ru).
+`clite` — CLI-клиент для AI-first таск-трекера [apitracker.ru](https://apitracker.ru).
 
 Этот репозиторий используется для distribution бинарей; исходный код CLI живёт в приватном monorepo [`gaev-tech/api-tracker`](https://github.com/gaev-tech/api-tracker).
 
@@ -9,42 +9,42 @@
 ### macOS (Apple Silicon)
 
 ```bash
-curl -L https://github.com/gaev-tech/cli-tracker/releases/latest/download/apit-darwin-arm64 -o /usr/local/bin/apit
-chmod +x /usr/local/bin/apit
-apit --version
+curl -L https://github.com/gaev-tech/cli-tracker/releases/latest/download/clite-darwin-arm64 -o /usr/local/bin/clite
+chmod +x /usr/local/bin/clite
+clite --version
 ```
 
 ### macOS (Intel) — с M2
 
 ```bash
-curl -L https://github.com/gaev-tech/cli-tracker/releases/latest/download/apit-darwin-amd64 -o /usr/local/bin/apit
-chmod +x /usr/local/bin/apit
+curl -L https://github.com/gaev-tech/cli-tracker/releases/latest/download/clite-darwin-amd64 -o /usr/local/bin/clite
+chmod +x /usr/local/bin/clite
 ```
 
 ### Linux (amd64) — с M2
 
 ```bash
-curl -L https://github.com/gaev-tech/cli-tracker/releases/latest/download/apit-linux-amd64 -o ~/.local/bin/apit
-chmod +x ~/.local/bin/apit
+curl -L https://github.com/gaev-tech/cli-tracker/releases/latest/download/clite-linux-amd64 -o ~/.local/bin/clite
+chmod +x ~/.local/bin/clite
 ```
 
 ### Windows (amd64) — с M2
 
 ```powershell
-Invoke-WebRequest -Uri https://github.com/gaev-tech/cli-tracker/releases/latest/download/apit-windows-amd64.exe -OutFile apit.exe
+Invoke-WebRequest -Uri https://github.com/gaev-tech/cli-tracker/releases/latest/download/clite-windows-amd64.exe -OutFile clite.exe
 ```
 
 ## Дополнительные каналы установки (с M4)
 
-- **PyPI**: `pipx install apit`
-- **Homebrew**: `brew install gaev-tech/cli-tracker/apit`
+- **PyPI**: `pipx install clite`
+- **Homebrew**: `brew install gaev-tech/cli-tracker/clite`
 - **APT**: см. [apt.apitracker.ru](https://apt.apitracker.ru)
 - **npm**: `npm install -g @gaev-tech/cli-tracker` или `npx @gaev-tech/cli-tracker ...`
 
 ## Документация
 
 - [apitracker.ru](https://apitracker.ru) — справка по CLI, RSQL, схеме данных, туториалы
-- [`apit --help`](https://apitracker.ru/cli) — справка прямо в CLI
+- [`clite --help`](https://apitracker.ru/cli) — справка прямо в CLI
 
 ## Быстрый старт
 
@@ -65,7 +65,7 @@ Production-проблемы — на admin@apitracker.ru.
 После установки сравните SHA256 артефакта с `.sha256` файлом из релиза:
 
 ```bash
-shasum -a 256 apit-darwin-arm64
-# должен совпасть с apit-darwin-arm64.sha256
+shasum -a 256 clite-darwin-arm64
+# должен совпасть с clite-darwin-arm64.sha256
 ```
 
